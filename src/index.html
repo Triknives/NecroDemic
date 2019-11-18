@@ -1,8 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Project Name</title>
-  </head>
-  <body>
-  </body>
+<head>
+  <title>NecroDemic</title>
+</head>
+<body>
+  <div class="header">
+    <h1 id="title">NecroDemic</h1>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Welcome to NecroDemic!</h2>
+    </div>
+    <div class="subtitle">
+      <p>Zombification is happening at unprecedented levels. Click the buttons to kill the zombies before there are 1024 zombies and we are all the LIVING DEAD!</p>
+
+      <form id="startForm">
+        <h3>Enter your human name:</h3>
+        <input id="userName" type="text" name="zName">
+        <button id="startZ" type="submit" name="button">Save Us All!</button>
+      </form>
+    </div>
+
+
+    <form id="zForm">
+      <button id="killZ" type="submit" name="button">Kill dem Zambies!</button>
+    </form>
+    <h2>Oh GOD the zombies are up to <span id="zcountOut"></span>!</h2>
+
+  </div>
+</body>
 </html>

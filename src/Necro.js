@@ -1,4 +1,5 @@
-export class Necro  {
+import $ from 'jquery';
+export class Necro {
 
   constructor(name){
     this.name = name;
@@ -21,5 +22,11 @@ export class Necro  {
   }
   zombieKill() {
    this.zCount *= .75;
+  }
+
+  zombieUpdate() {
+    setInterval(() => {
+      $("#zcountOut").text(this.zCount);
+    }, 5000);
   }
 }
