@@ -3,13 +3,13 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { Necro } from './../src/Necro.js';
-
+import {  } from './../src/clock.js';
 
 
 
 $(document).ready(function(){
   $('#startForm').submit(function(event){
-    $('.subtitle').hide();
+    $('.introPage').hide();
 
 
     const userName = $('#userName').val();
@@ -18,19 +18,16 @@ $(document).ready(function(){
     necroMancer.earthCheck();
     necroMancer.zombieUpdate();
     event.preventDefault();
-    console.log(necroMancer);
+
 
 
     $('form#zForm').submit(function(event){
       necroMancer.zombieKill();
       event.preventDefault();
-      console.log("hey");
 
 
-      // $("#zcountOut").text(necroMancer.zCount);
+
+
     });
-
-
-
   });
 });

@@ -12,9 +12,9 @@ export class Necro {
     }, 5000);
   }
 
+
   earthCheck() {
     if (this.zCount < 1024) {
-      //call question
       return true;
     } else {
       return "ya dead";
@@ -27,6 +27,15 @@ export class Necro {
   zombieUpdate() {
     setInterval(() => {
       $("#zcountOut").text(this.zCount);
-    }, 5000);
+      let timeleft = 5;
+      let zombieTimer = setInterval(function(){
+        document.getElementById("timeOutput").innerHTML = timeleft + " seconds remaining";
+        timeleft -= 1;
+        if(timeleft < 0){
+          clearInterval(zombieTimer);
+          timeleft = 5;
+        }
+      }, 1000);
+    }, 6000);
   }
 }
