@@ -1,0 +1,18 @@
+.zEnd {
+  display: none;
+}
+
+.zGame {
+  display: none;
+}
+
+#zBackground {
+  background-color: grey;
+  border: 2px solid black;
+  width: 50%;
+}
+
+#zProgress {
+  background-color: green;
+  width: 0% ;
+}
